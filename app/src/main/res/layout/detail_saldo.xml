@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#f7f7f7"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+
+        android:layout_below="@id/kepala"
+        android:elevation="5dp"
+        android:id="@+id/kepala"
+        android:background="@color/splash_bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_kembali"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:id="@+id/dompet"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:tint="@color/black"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_detail"/>
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/dompet"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="Detail Transaction"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/idtr"
+        android:gravity="center"
+        android:background="@color/greyText"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.50"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:text="Pace1234"
+            android:id="@+id/id_transaksi1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:layout_weight="0.50"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:drawableLeft="@drawable/ic_calender"
+            android:id="@+id/tgl_transaksi1"
+            android:text="Date: 1 Januari 2019"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:gravity="center"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ic_lokasi_antar"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:src="@drawable/ic_lokasi_antar"/>
+        <TextView
+            android:layout_toRightOf="@+id/ic_lokasi_antar"
+            android:layout_width="match_parent"
+            android:layout_height="37sp"
+            android:textSize="13dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:lines="2"
+            android:id="@+id/alamat11"
+            android:text="Perumnas Poasia Blok C No 159, Anduonohu, Poasia, Rahandouna, Poasia, Kota Kendari, Sulawesi Tenggara 93231, Indonesia"
+            android:textColor="@color/greyText"/>
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/alamat11"
+            android:id="@+id/ic_lokasi_jemput"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:src="@drawable/ic_lokasi_jemput"/>
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/alamat11"
+            android:layout_toRightOf="@id/ic_lokasi_jemput"
+            android:layout_width="match_parent"
+            android:paddingLeft="5dp"
+            android:gravity="center_vertical"
+            android:layout_height="37sp"
+            android:lines="2"
+            android:textSize="13dp"
+            android:id="@+id/alamat21"
+            android:text="Perumnas Poasia Blok C No 159, Anduonohu, Poasia, Rahandouna, Poasia, Kota Kendari, Sulawesi Tenggara 93231, Indonesia"
+            android:textColor="@color/greyText"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_margin="5dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/deta_profil"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.github.siyamed.shapeimageview.CircularImageView
+                android:layout_width="100dp"
+                android:src="@drawable/facebook"
+                android:layout_height="100dp" />
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:id="@+id/namaPelanggan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Muh Arifandi"/>
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:id="@+id/no_telp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="085316547777"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/deta_tarif"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/deta_profil"
+            android:gravity="center"
+            android:background="@color/greyText"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="0.50"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:text="Tarif : $.5.00"
+                android:id="@+id/Tarif1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textStyle="bold"
+                android:layout_weight="0.50"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:id="@+id/km1"
+                android:text="Distance: 20/km"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:background="#e7e6e6"
+            android:layout_below="@+id/deta_tarif"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/deskrip"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="0.50"
+                        android:text="Total cost"
+                        android:textColor="@color/greyText"
+                        android:textStyle=""
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                    <TextView
+                        android:id="@+id/total_harga1"
+                        android:layout_weight="0.50"
+                        android:text="$.10.00"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="0.50"
+                        android:text="Kredit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                    <TextView
+                        android:id="@+id/potonga1"
+                        android:layout_weight="0.50"
+                        android:text="2.00"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.50"
+                        android:text="Order Featur" />
+                    <TextView
+                        android:id="@+id/pendapatan1"
+                        android:layout_weight="0.50"
+                        android:text="$.8.00"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+
+                </LinearLayout>
+                <TextView
+                    android:gravity="center_vertical"
+                    android:text="Passenger Receipt"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="0.50"
+                        android:text="Total cost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                    <TextView
+                        android:id="@+id/total_penumpang1"
+                        android:layout_weight="0.50"
+                        android:text="$.5.00 "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="0.50"
+                        android:text="Paid Passenger"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                    <TextView
+                        android:id="@+id/dibayar_penumpang1"
+                        android:layout_weight="0.50"
+                        android:text="$10.00 "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="0.50"
+                        android:text="Ammount Balance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                    <TextView
+                        android:id="@+id/saldo1"
+                        android:layout_weight="0.50"
+                        android:text="$10.00 "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+
+                </LinearLayout>
+                
+            </LinearLayout>
+
+        <RelativeLayout
+
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:id="@+id/detail_trans"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/ket"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keterangan Lebih lanjut"/>
+
+            <ImageView
+                android:layout_toRightOf="@id/ket"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_down"/>
+
+
+
+        </RelativeLayout>
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

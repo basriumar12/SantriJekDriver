@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/santrijek_blue</color>
+    <color name="colorPrimaryDark">@color/white</color>
+    <color name="colorAccent">@color/splash_bg_color</color>
+
+    <color name="splash_bg_color">#ffcc00</color>
+
+    <color name="santrijek_blue">#008CD6</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="yellow">#ffcc00</color>
+    <color name="cream">#edd380</color>
+    <color name="orange">#ff5113</color>
+    <color name="orange1">#d9a500</color>
+    <color name="darkOrange">#c89407</color>
+    <color name="darkGrey">#666666</color>
+    <color name="blue">#127399</color>
+    <color name="blueTransparent">#60127399</color>
+    <color name="klikButton">#00739b</color>
+    <color name="brown">#b87e00</color>
+    <color name="darkBrown">#663300</color>
+    <color name="darkerBrown">#462300</color>
+    <color name="red">#ff0000</color>
+    <color name="yellowCream">#ffea78</color>
+    <color name="textGrey">#9b9a9a</color>
+    <color name="lightGrey">#f4f4f4</color>
+    <color name="bgChat">#ffcc00</color>
+    <color name="tintGrey">#cfcfcf</color>
+    <color name="tintDarkGrey">#646464</color>
+    <color name="textColorGreen">#27c669</color>
+    <color name="textColorRed">#c4242c</color>
+    <color name="hijau">#15ef19</color>
+
+    <color name="colorGrey">#a5a5a5</color>
+    <color name="color_grey_toWhite">#eeeeee</color>
+    <color name="greyText">#484f59</color>
+
+</resources>

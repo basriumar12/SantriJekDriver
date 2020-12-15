@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.santrijek.driver.MainActivity">
+    <item
+        android:visible="false"
+        android:id="@+id/action_navigate"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_navigate"
+        android:title="@string/action_navigate"
+        app:showAsAction="always" />
+</menu>

@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+        
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:elevation="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pasengger Name"/>
+            
+            <TextView
+                android:id="@+id/namaPelanggan"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Order"/>
+            
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/logoOrder"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@mipmap/ic_rider" />
+
+            <TextView
+                android:id="@+id/judulOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/addInfo"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:visibility="gone" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#90663300" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/content_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            tools:context="com.santrijek.driver.MainActivity">
+
+
+
+            <FrameLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/headerJemput"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="54dp"
+                            android:text="Jemput"
+                            android:textColor="@color/black" />
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center_vertical|left"
+                            android:maxLines="3"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="12dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="2dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="40dp"
+                            android:background="#4e2100" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:visibility="gone"
+                        android:id="@+id/frameAlamatAntar"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_weight="1"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/headerAntar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="54dp"
+                            android:text="Antar"
+                            android:textColor="@color/black" />
+
+                        <ImageView
+                            android:visibility="gone"
+                            android:id="@+id/iconTagAntar"
+                            android:layout_width="32dp"
+                            android:layout_height="34dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="30dp"
+                            android:src="@mipmap/ic_loc_antar" />
+
+
+
+                    </FrameLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_alignParentTop="true"
+                    android:background="#60663300" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/textKE"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/circle_backgroud"
+                    android:gravity="center"
+                    android:text="KE"
+                    android:textColor="@color/white" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:elevation="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_marginRight="5dp"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.50">
+
+                    <TextView
+                        android:id="@+id/headerJarak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:gravity="right"
+                        android:text="Distance :"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:layout_toRightOf="@id/headerJarak"
+                        android:id="@+id/textKM"
+                        android:gravity="right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10km"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/red"
+                        android:textSize="17dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.50">
+
+                    <TextView
+                        android:id="@+id/textTotalBiaya"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fare :"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+
+                    <TextView
+                        android:layout_toRightOf="@+id/textTotalBiaya"
+                        android:text="1000"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/textBiaya"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/red"
+                        android:textSize="17dp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+            <com.bcgdv.asia.lib.ticktock.TickTockView
+                android:id="@+id/tickTock"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:layout_marginTop="10dp"
+                app:tickAutoFitText="true"
+                app:tickCircleDuration="total_time"
+                app:tickDotRadius="10dp"
+                app:tickEmptyRingColor="@android:color/white"
+                app:tickFillRingColor="@color/black"
+                app:tickMoveCounterClockwise="true"
+                app:tickRingThickness="8dp"
+                app:tickText="18"
+                app:tickTextColor="@color/black"
+                android:textAlignment="center"
+                />
+            <RelativeLayout
+                android:layout_margin="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/ic_lokasi_antar"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:src="@mipmap/ic_loc_jemput"/>
+                <TextView
+                    android:layout_below="@+id/ic_lokasi_antar"
+                    android:layout_width="match_parent"
+                    android:layout_height="30sp"
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:lines="2"
+                    android:id="@+id/alamatJemput"
+                    android:text="Perumnas Poasia Blok C No 159, Anduonohu, Poasia, Rahandouna, Poasia, Kota Kendari, Sulawesi Tenggara 93231, Indonesia"
+                    android:textColor="@color/greyText"/>
+
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/alamatJemput"
+                    android:id="@+id/ic_lokasi_jemput"
+                    android:layout_width="40sp"
+                    android:layout_height="40sp"
+                    android:src="@mipmap/ic_loc_antar"/>
+                <TextView
+
+
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/alamatAntar"
+                    android:layout_below="@id/ic_lokasi_jemput"
+                    android:layout_width="match_parent"
+                    android:paddingLeft="5dp"
+                    android:gravity="center"
+                    android:layout_height="30sp"
+                    android:lines="2"
+                    android:textSize="12dp"
+                    android:text="Perumnas Poasia Blok C No 159, Anduonohu, Poasia, Rahandouna, Poasia, Kota Kendari, Sulawesi Tenggara 93231, Indonesia"
+                    android:textColor="@color/greyText"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="@string/info_klik"
+                android:textColor="@color/darkGrey"
+                android:textSize="12dp" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:weightSum="1"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_weight="0.50"
+                android:id="@+id/ambilBooking"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/ic_select_accept"
+                android:gravity="center"
+                android:text="Accept"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:layout_margin="5dp"
+                android:layout_weight="0.50"
+                android:id="@+id/tolakBooking"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ic_select_reject"
+                android:gravity="center"
+                android:text="Reject"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <!--</LinearLayout>-->
+    </LinearLayout>
+
+
+

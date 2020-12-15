@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_list_barang"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.santrijek.driver.activity.ListBarangActivity">
+
+
+<LinearLayout
+    android:background="@drawable/bgt"
+    android:layout_margin="10dp"
+    android:elevation="5dp"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/greyText"
+        android:text="Food shopping details"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:background="@color/white"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/namaResto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:drawableLeft="@drawable/ic_e_food"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="McD Kayu tangan"
+                android:textColor="@color/greyText"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="4">
+            <Button
+                android:id="@+id/callResto"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ic_select_callt"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blueTransparent" />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/reviListBarang"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+    <TextView
+        android:background="@drawable/bg_total"
+        android:id="@+id/estimasiBiaya"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:paddingRight="10dp"
+        android:gravity="end"
+        android:textStyle="bold"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/greyText"
+        android:text="Etimasi Biaya : nRp 100.000,00"/>
+</LinearLayout>
+</LinearLayout>

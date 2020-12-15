@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/content_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.santrijek.hykitz.MainActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/kepaaa"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/santrijek_blue"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/aktif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Offline"
+                    android:textColor="@color/greyText"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+
+                <FrameLayout
+                    android:id="@+id/switch_wrapper"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp">
+
+
+                    <Switch
+                        android:id="@+id/switch_bekerja"
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/bg_btn"
+                        android:clickable="false"
+                        android:gravity="center"
+                        android:textOff="Off"
+                        android:textOn="On"
+                        android:theme="@style/MySwitch" />
+                </FrameLayout>
+
+            </LinearLayout>
+            <fragment
+                android:layout_below="@+id/kepaaa"
+                android:id="@+id/map_main"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:id="@+id/refresh"
+                android:background="@drawable/bg_title"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_refresh"
+                android:layout_marginTop="55dp"/>
+
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+                <RelativeLayout
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp">
+
+                    <com.github.siyamed.shapeimageview.CircularImageView
+                        android:layout_centerInParent="true"
+                        android:id="@+id/imageDriver1"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:alpha="1"
+                        app:siBorderAlpha="0.7"
+                        app:siBorderColor="@color/blue"
+                        app:siBorderType="fill"
+                        app:siBorderWidth="2dp"
+                        app:siRadius="8dp" />
+                </RelativeLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/namaDriver1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:id="@+id/carName1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:id="@+id/carPlat1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="100dp"
+                    android:layout_marginBottom="@dimen/dimen_10"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textSize="17dp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Auto Accept"/>
+
+                    <Button
+                        android:id="@+id/butAutoBid"
+                        android:layout_width="70dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/bg_btn"/>
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/iconBekerja"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/hykit" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+

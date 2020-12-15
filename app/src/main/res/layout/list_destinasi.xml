@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_list_barang"
+    android:layout_width="match_parent"
+    android:background="@drawable/bgt"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    android:elevation="5dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/urutanPenerima"
+        android:background="@drawable/bg_total"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="17dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Penerima 1"/>
+    <RelativeLayout
+
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_nama"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_nama"/>
+    <TextView
+        android:layout_toRightOf="@+id/img_nama"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/namaPenerima"
+        android:layout_width="match_parent"
+        android:layout_height="20sp"
+        android:textSize="15dp"
+        android:textAllCaps="true"
+        android:text="Gagah Istaid Billah"
+        android:textColor="@color/black"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgtelp"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_nomor"/>
+
+        <TextView
+            android:layout_toRightOf="@id/imgtelp"
+            android:id="@+id/teleponPenerima"
+            android:layout_width="wrap_content"
+            android:layout_height="20sp"
+            android:gravity="center_vertical"
+            android:text="Nomor"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:textSize="15dp"/>
+            <Button
+                android:layout_alignParentRight="true"
+                android:id="@+id/callPenerima"
+                android:layout_width="30dp"
+                android:layout_marginRight="20sp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_panggil" />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_total"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:textSize="15dp"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="Intruksi"/>
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_deta"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:src="@drawable/ic_detail"/>
+    <TextView
+        android:layout_toRightOf="@+id/img_deta"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/instruksi"
+        android:layout_width="match_parent"
+        android:layout_height="20sp"
+        android:layout_marginTop="2dp"
+        android:textSize="12dp"
+        android:textAllCaps="true"
+        android:text="Barang jangan sampai pecah!"
+        android:textColor="@color/black"/>
+    </RelativeLayout>
+
+
+<RelativeLayout
+    android:layout_marginTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:layout_alignParentRight="true"
+        android:id="@+id/rute"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="20sp"
+        android:drawableTint="@color/splash_bg_color"
+        android:background="@drawable/ic_navigate"/>
+
+
+<ImageView
+    android:id="@+id/loc"
+    android:layout_width="20sp"
+    android:layout_height="20sp"
+    android:src="@mipmap/ic_loc_antar"/>
+    <TextView
+        android:layout_toRightOf="@id/loc"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/rute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jalan Batu Gana"
+        android:textSize="13sp"
+        android:lines="3"
+        android:textColor="@color/black"
+        android:id="@+id/alamatPenerima"/>
+</RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img_desk"
+        android:tint="@color/splash_bg_color"
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        android:src="@drawable/ic_transaksi"/>
+    <TextView
+        android:layout_toRightOf="@+id/img_desk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dekat Masjid"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:id="@+id/detailAlamatPenerima"/>
+</RelativeLayout>
+
+</LinearLayout>

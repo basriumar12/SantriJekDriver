@@ -1,0 +1,36 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_gravity="center"
+    tools:context="com.santrijek.driver.MainActivity">
+
+
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_slide"
+        android:padding="6dp"/>
+    <ImageView
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/image_kembali"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_kembali"
+        android:padding="6dp"/>
+
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

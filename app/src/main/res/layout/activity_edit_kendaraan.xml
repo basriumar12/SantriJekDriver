@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_konfirmasi_barang"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:focusableInTouchMode="true"
+    tools:context="com.santrijek.driver.activity.EditSettingActivity">
+
+    <RelativeLayout
+        android:elevation="5dp"
+        android:id="@+id/kepala"
+        android:background="@color/splash_bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_kembali"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:id="@+id/dompet"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_kendaraan"/>
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/dompet"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="Edit vehicle"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/judulEdit"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:text="Change Vehicle Details"/>
+    <EditText
+        android:id="@+id/kolomMerek"
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:maxLines="1"
+        android:hint="Brand (ex: Yamaha)"
+        android:paddingRight="10dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/round_rect_bg"/>
+    <EditText
+        android:id="@+id/kolomTipe"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:maxLines="1"
+        android:hint="Transportation type (ex: Vixion)"
+        android:paddingRight="10dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/round_rect_bg"/>
+    <EditText
+        android:id="@+id/kolomNopol"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:maxLines="1"
+        android:hint="Number of vehicles (ex: BG 1234 OY)"
+        android:paddingRight="10dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/round_rect_bg"/>
+    <EditText
+        android:id="@+id/kolomWarna"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:maxLines="1"
+        android:hint="Colour (ex: Hitam)"
+        android:paddingRight="10dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/round_rect_bg"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom">
+        <TextView
+            android:id="@+id/butSubmitU"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/white"
+            android:text="Change Vehicle"
+            android:background="@drawable/ic_select_topup"
+            android:textAllCaps="true"
+            android:textSize="20dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>

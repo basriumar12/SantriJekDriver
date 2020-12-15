@@ -1,0 +1,42 @@
+<resources>
+  <string name="app_name">Santri Driver</string>
+  <string name="action_settings">Settings</string>
+  <string name="action_navigate">Navigasi</string>
+  <string name="info_klik">Klik tombol di bawah ini jika Anda ingin mengambil pesanan ini</string>
+
+  <string name="go_online">On-line</string>
+  <string name="go_offline">Off-line</string>
+  <string name="notif_activity">New Order</string>
+  <string name="navigation_drawer_open">Open navigation drawer</string>
+  <string name="navigation_drawer_close">Close navigation drawer</string>
+  <string name="title_activity_maps">Map</string>
+  <string name="lorem_ipsum">This is an example of feedback given by the customer to the driver after the order..</string>
+  <string name="lorem_ipsum_long">Cara penarikan dana : \n 1.Masukkan nominal penarikan dana pada kolom di atas \n 2.Klik tombol "Tarik Dana Sekarang" \n 3.Tunggu admin memverifikasi permintaan penarikan \n 4.Dana akan terpotong autamtis setelh di setujui, jumlah terpotong sesuai permintaan penarikan  </string>
+  <string-array name="list_bank">
+    <item>Bank Mandiri</item>
+    <item>Bank BRI</item>
+    <item>Bank BNI</item>
+    <item>Bank Lainnya</item>
+  </string-array>
+  <string name="saran">Your suggestions \nhelp us serve you better</string>
+  <string name="saran_saran">Choose the number of stars \nfor my service</string>
+  <string-array name="list_maximum_belanja">
+    <item>100.000</item>
+    <item>200.000</item>
+    <item>300.000</item>
+    <item>500.000</item>
+    <item>1.000.000</item>
+    <item>Unlimited</item>
+  </string-array>
+  <string name="title_activity_ticket">Book Ticket</string>
+  <string name="lbl_duration">DURATION</string>
+  <string name="lbl_genre">GENRE</string>
+  <string name="lbl_rating">RATING</string>
+  <string name="lbl_price">PRICE</string>
+  <string name="btn_buy_now">BUY NOW</string>
+  <string name="btn_coming_soon">COMING SOON</string>
+  <string name="msg_no_ticket_found">Kode QR ini Tidak dikenali \n Silahkan hubungi Putra Massulowalie</string>
+
+
+
+</resources>

@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.santrijek.driver.MainActivity">
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/textStatus"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/splash_bg_color"
+        android:gravity="center"
+        android:text="Status : Menuju Penjemputan"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="italic|bold"></TextView>
+
+    <LinearLayout
+        android:id="@+id/detail"
+        android:background="@color/greyText"
+        android:weightSum="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/btn_asal"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_weight="0.50"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <RelativeLayout
+                android:gravity="center"
+                android:id="@+id/r_pick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/im_jemput"
+                    android:layout_width="32dp"
+                    android:layout_height="34dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_loc_jemput" />
+                <TextView
+                    android:id="@+id/txt_pickup"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/im_jemput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pick-Up"/>
+
+
+            </RelativeLayout>
+
+            <TextView
+
+                android:layout_below="@+id/r_pick"
+                android:id="@+id/namaResto"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Muh Arifandi"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/btn_tujuan"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.50"
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <RelativeLayout
+                android:gravity="center"
+                android:id="@+id/r_desti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/im_antar"
+                    android:layout_width="32dp"
+                    android:layout_height="34dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_loc_antar" />
+                <TextView
+                    android:id="@+id/txt_destination"
+                    android:textSize="20sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/im_antar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Destination"/>
+            </RelativeLayout>
+
+            <TextView
+                android:gravity="center"
+                android:layout_below="@+id/r_desti"
+                android:id="@+id/namaPelanggan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Muh Arifandi"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/greyText"/>
+
+    <LinearLayout
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:background="@color/greyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/alamat_desk"
+            android:layout_weight="0.20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/alamatJemput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center|left"
+                android:maxLines="2"
+                android:layout_margin="2dp"
+                android:paddingLeft="10dp"
+                android:text="Perumnas Poasia Blok C No 159, Anduonohu, Poasia, Rahandouna, Poasia, Kota Kendari, Sulawesi Tenggara 93231, Indonesia "
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/alamatAntar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center|left"
+                android:maxLines="2"
+                android:layout_margin="2dp"
+                android:paddingLeft="10dp"
+                android:text="Perumnas Poasia Blok C No 159, Anduonohu, Poasia, Rahandouna, Poasia, Kota Kendari, Sulawesi Tenggara 93231, Indonesia "
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rute_asal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight=".80"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/rutetujuan"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:tint="@color/white"
+                android:src="@drawable/ic_navigate"/>
+
+            <ImageView
+                android:id="@+id/ruteasal"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:tint="@color/white"
+                android:src="@drawable/ic_navigate"/>
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:background="@color/greyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="horizontal">
+
+
+
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/idOrder"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Id : 123456"
+                android:textColor="@color/white"
+                android:textSize="12dp" />
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="TUNAI "
+                    android:textSize="12dp"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:textSize="12dp"
+                    android:id="@+id/textTunai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Rp 10.000,-"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Kedit "
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:id="@+id/textCredit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="(Rp 10.000,-)"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <FrameLayout
+            android:layout_above="@+id/detail_pocik"
+            android:id="@+id/layerCustom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <fragment
+                android:id="@+id/mapOrder"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+
+        </FrameLayout>
+        <RelativeLayout
+            android:id="@+id/detail_pocik"
+            android:layout_alignParentBottom="true"
+            android:background="@color/greyText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:weightSum="4"
+                android:id="@+id/tombol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <RelativeLayout
+                    android:background="?attr/selectableItemBackground"
+                    android:id="@+id/listBarang"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/barag"
+                        android:layout_width="40dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_detail" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_below="@id/barag"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:text="Item"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+
+                        android:id="@+id/chatPelanggan"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_select_chat" />
+
+                    <TextView
+                        android:layout_below="@id/chatPelanggan"
+                        android:layout_width="50dp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:text="Chat"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/callPelanggan"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/ic_select_callt" />
+
+                    <TextView
+                        android:layout_below="@id/callPelanggan"
+                        android:layout_width="50dp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:text="Call"/>
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/logoOrder"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="bottom"
+                        android:src="@mipmap/ic_mrider" />
+
+                    <TextView
+                        android:layout_below="@id/logoOrder"
+                        android:layout_width="match_parent"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:text="Order Fitur"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_below="@id/tombol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+
+                    android:id="@+id/cancelOrder"
+                    android:gravity="center"
+                    android:background="@drawable/bg_kotak"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.70"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cancel"
+                        android:textSize="20dp"
+                        android:textColor="@color/white"
+                        android:gravity="center"/>
+
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_weight="0.30"
+                    android:id="@+id/pickUpPelanggan"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_pick"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:id="@+id/txt_pick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:elevation="5dp"
+                        android:text="Pick-Up"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <ImageView
+                android:visibility="gone"
+                android:layout_below="@+id/tombol"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/select_pick_customer" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
+

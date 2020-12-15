@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#f7f7f7"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+
+        android:layout_below="@id/kepala"
+        android:elevation="5dp"
+        android:id="@+id/kepala"
+        android:background="@color/splash_bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_kembali"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:id="@+id/dompet"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:tint="@color/black"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_detail"/>
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/dompet"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="Detail Transaction"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/idtr"
+        android:gravity="center"
+        android:background="@color/greyText"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.50"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:text="Transaksi manual"
+            android:id="@+id/jenis_transaksi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:layout_weight="0.50"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:drawableLeft="@drawable/ic_calender"
+            android:id="@+id/tgl_transaksi"
+            android:text="Date: 1 Januari 2019"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+
+        <LinearLayout
+            android:gravity="center"
+            android:background="#e7e6e6"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <!--android:layout_below="@+id/deta_tarif"
+            -->
+
+            <LinearLayout
+                android:id="@+id/deskrip"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/keterangan"
+                    android:gravity="center_vertical"
+                    android:text="Manual Transaction"
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.50"
+                        android:text="Amount"
+                        android:textColor="@color/greyText"
+                        android:textStyle="" />
+                    <TextView
+                        android:id="@+id/saldoawal"
+                        android:layout_weight="0.50"
+                        android:text="$.10.00"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="0.50"
+                        android:text="Saldo akhir"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                    <TextView
+                        android:id="@+id/nambah"
+                        android:layout_weight="0.50"
+                        android:text="2.00"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.50"
+                        android:text="Deskription" />
+                    <TextView
+                        android:id="@+id/keterangan1"
+                        android:layout_weight="0.50"
+                        android:text="$.8.00"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="0.50"
+                        android:text="Total Saldo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                    <TextView
+                        android:id="@+id/tambah_saldo"
+                        android:layout_weight="0.50"
+                        android:text="$.5.00 "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_weight="0.50"
+                        android:text="Ditambah Oleh Admin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+                    <TextView
+                        android:id="@+id/saldo1"
+                        android:layout_weight="0.50"
+                        android:text="$10.00 "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <RelativeLayout
+
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:id="@+id/detail_trans"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/ket"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Keterangan Lebih lanjut"/>
+
+                <ImageView
+                    android:layout_toRightOf="@id/ket"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_down"/>
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

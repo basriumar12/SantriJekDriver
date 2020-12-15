@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "289883342746",
+    "firebase_url": "https://santrijek-id.firebaseio.com",
+    "project_id": "santrijek-id",
+    "storage_bucket": "santrijek-id.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:289883342746:android:76cfd02806a9530dd1dc23",
+        "android_client_info": {
+          "package_name": "com.santrijek.customer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "289883342746-m69lpi9rgb0acjp122jlh5lj5mbbuada.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJc_0qIDdTItFTk2lbhWnJYcZkCpcx75I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "289883342746-m69lpi9rgb0acjp122jlh5lj5mbbuada.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:289883342746:android:804b85697bc50f4fd1dc23",
+        "android_client_info": {
+          "package_name": "com.santrijek.driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "289883342746-m69lpi9rgb0acjp122jlh5lj5mbbuada.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJc_0qIDdTItFTk2lbhWnJYcZkCpcx75I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "289883342746-m69lpi9rgb0acjp122jlh5lj5mbbuada.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:elevation="5dp"
+        android:id="@+id/kepala"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_kembali"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:id="@+id/dompet"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_dompet"/>
+    <TextView
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/dompet"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:text="Wallet"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/kepala1"
+        android:layout_below="@+id/kepala"
+        android:background="@color/splash_bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+
+        <TextView
+            android:id="@+id/sld"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:text="your balance($)"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/sld"
+            android:id="@+id/saldo"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="$ 10.00"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@+id/kepala1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/nm_pemil"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name of the sender :"/>
+
+            <EditText
+                android:layout_below="@+id/nm_pemil"
+                android:id="@+id/pemilikRekening"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:gravity="left|center_vertical"
+                android:hint="Account owner"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/greyText"
+                android:textSize="15dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/tztnominal"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter your account number:"/>
+
+
+            <EditText
+                android:layout_below="@+id/tztnominal"
+                android:id="@+id/nomorRekening"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:gravity="left|center_vertical"
+                android:hint="Masukkan Nomor Rekening anda"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/greyText"
+                android:textSize="15dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/txtptujuan"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Destination Bank:"/>
+
+            <Spinner
+                android:id="@+id/spinBank"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="10dp"
+                android:entries="@array/list_bank"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/other_bank_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/other_bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="left|center_vertical"
+                    android:hint="Nama Bank Lainnya"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/lightGrey"
+                    android:textSize="16dp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="10dp"
+                android:textColor="@color/black"
+                android:id="@+id/txtms"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter the nominal amount :"/>
+
+            <EditText
+                android:layout_below="@+id/txtms"
+                android:id="@+id/nominalTransfer"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:gravity="left|center_vertical"
+                android:hint="Nominal Transfer"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="@color/greyText"
+                android:textSize="15dp" />
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/rp20"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$.20.00"
+                android:background="@drawable/bg_uang"/>
+            <TextView
+                android:layout_toRightOf="@id/rp20"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/rp30"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$.30.00"
+                android:background="@drawable/bg_uang"/>
+            <TextView
+                android:layout_toRightOf="@id/rp30"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/rp40"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$.40.00"
+                android:background="@drawable/bg_uang"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/rp20"
+                android:id="@+id/rp50"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$.50.00"
+                android:background="@drawable/bg_uang"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/rp50"
+                android:layout_below="@id/rp30"
+                android:id="@+id/rp60"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$.60.00"
+                android:background="@drawable/bg_uang"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/rp60"
+                android:layout_below="@id/rp30"
+                android:id="@+id/rp70"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$.70.00"
+                android:background="@drawable/bg_uang"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/rp50"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/rp80"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$.80.00"
+                android:background="@drawable/bg_uang"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/rp70"
+                android:id="@+id/rp90"
+                android:layout_toRightOf="@id/rp80"
+                android:layout_marginLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$.90.00"
+                android:background="@drawable/bg_uang"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/rp70"
+                android:id="@+id/rp100"
+                android:layout_toRightOf="@id/rp90"
+                android:layout_marginLeft="7dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$.100.00"
+                android:background="@drawable/bg_uang"/>
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:weightSum="1"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_weight="0.50"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:id="@+id/butUploadBukti"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="PROOF UPLOAD"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:background="@drawable/ic_select_upload_bukti"/>
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/centang"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_centang_yes"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <TextView
+
+            android:layout_weight="0.50"
+            android:textStyle="bold"
+            android:id="@+id/butTopup"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="TOP UP"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:background="@drawable/ic_select_topup"/>
+    </LinearLayout>
+</RelativeLayout>
+
+
