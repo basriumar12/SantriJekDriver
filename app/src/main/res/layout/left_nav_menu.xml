@@ -132,7 +132,7 @@
             android:background="#efe8e1"
             android:orientation="vertical">
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/menu_rw"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -165,9 +165,9 @@
                         android:textColor="@color/greyText"
                         android:textStyle="bold" />
                 </LinearLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/menu_deposit"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -200,9 +200,9 @@
                         android:textColor="@color/greyText"
                         android:textStyle="bold" />
                 </LinearLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/menu_withdraw"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -235,9 +235,9 @@
                         android:textColor="@color/greyText"
                         android:textStyle="bold" />
                 </LinearLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
             android:id="@+id/menu_performa"
                 android:visibility="gone"
             android:layout_width="match_parent"
@@ -270,9 +270,9 @@
                         android:textColor="@color/blue"
                         android:textStyle="bold" />
                 </LinearLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/menu_rating"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -314,9 +314,9 @@
                     </LinearLayout>
 
                 </LinearLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/menu_feedback"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -349,9 +349,9 @@
                         android:textColor="@color/greyText"
                         android:textStyle="bold" />
                 </LinearLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/menu_booking"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -384,11 +384,11 @@
                         android:textColor="@color/colorGrey"
                         android:textStyle="bold" />
                 </LinearLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
 
 
-            <android.support.v7.widget.CardView
+            <androidx.cardview.widget.CardView
                 android:id="@+id/menu_account"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -422,8 +422,8 @@
                         android:textStyle="bold" />
                 </LinearLayout>
 
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
             android:id="@+id/menu_inbox"
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -456,8 +456,8 @@
                     android:textColor="@color/greyText"
                     android:textStyle="bold" />
             </LinearLayout>
-        </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
+        </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
                 android:id="@+id/privacy"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -490,8 +490,8 @@
                         android:textColor="@color/greyText"
                         android:textStyle="bold" />
                 </LinearLayout>
-            </android.support.v7.widget.CardView>
-            <android.support.v7.widget.CardView
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
                 android:id="@+id/faq"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
@@ -524,7 +524,7 @@
                         android:textColor="@color/greyText"
                         android:textStyle="bold" />
                 </LinearLayout>
-            </android.support.v7.widget.CardView>
+            </androidx.cardview.widget.CardView>
 
             <RelativeLayout
                 android:background="@color/white"

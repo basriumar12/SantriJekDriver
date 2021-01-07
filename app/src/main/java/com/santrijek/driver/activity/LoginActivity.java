@@ -6,7 +6,7 @@ import android.content.ContextWrapper;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.santrijek.driver.database.DBHandler;
@@ -133,7 +133,8 @@ public class LoginActivity extends AppCompatActivity {
                         pd.dismiss();
                         user = HTTPHelper.parseUserJSONData(activity, obj.toString());
                         user.gcm_id = token;
-                        user.password = password.getText().toString();
+                        user.password = "1234";
+                        user.email = "admin";
                         Log.d("User : "+ user.name , "password : " +user.password + "Token :  " + user.gcm_id);
                         Queries que = new Queries(new DBHandler(activity));
                         que.insertDriver(user);

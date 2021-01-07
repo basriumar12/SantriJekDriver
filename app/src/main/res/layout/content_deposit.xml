@@ -172,7 +172,7 @@
             android:layout_height="wrap_content">
 
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/other_bank_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -192,7 +192,7 @@
                     android:maxLines="1"
                     android:textColor="@color/lightGrey"
                     android:textSize="16dp" />
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
 
         </RelativeLayout>

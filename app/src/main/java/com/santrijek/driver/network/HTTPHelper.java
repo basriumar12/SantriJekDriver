@@ -3,6 +3,7 @@ package com.santrijek.driver.network;
 import android.content.Context;
 import android.util.Base64;
 
+import com.santrijek.driver.activity.Constant;
 import com.santrijek.driver.database.DBHandler;
 import com.santrijek.driver.database.Queries;
 import com.santrijek.driver.model.BarangBelanja;
@@ -152,7 +153,7 @@ public class HTTPHelper {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 HashMap<String, String> headers = new HashMap<String, String>();
-                String credentials = (driver.email + ":" + driver.password);
+                String credentials = (Constant.username + ":" + Constant.password);
                 String base64EncodedCredentials = Base64.encodeToString(credentials.getBytes(), Base64.NO_WRAP);
                 headers.put("Content-Type", "application/json; charset=UTF-8");
                 headers.put("Authorization", "Basic " + base64EncodedCredentials);
@@ -183,7 +184,7 @@ public class HTTPHelper {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 HashMap<String, String> headers = new HashMap<String, String>();
-                String credentials = (driver.email + ":" + driver.password);
+                String credentials = (Constant.username + ":" + Constant.password);
                 String base64EncodedCredentials = Base64.encodeToString(credentials.getBytes(), Base64.NO_WRAP);
                 headers.put("Content-Type", "application/json; charset=UTF-8");
                 headers.put("Authorization", "Basic " + base64EncodedCredentials);
@@ -259,7 +260,7 @@ public class HTTPHelper {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 HashMap<String, String> headers = new HashMap<String, String>();
-                String credentials = (driver.email + ":" + driver.password);
+                String credentials = (Constant.username + ":" + Constant.password);
                 String base64EncodedCredentials = Base64.encodeToString(credentials.getBytes(), Base64.NO_WRAP);
                 headers.put("Content-Type", "application/json");
                 headers.put("Authorization", "Basic " + base64EncodedCredentials);
@@ -289,7 +290,7 @@ public class HTTPHelper {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 HashMap<String, String> headers = new HashMap<String, String>();
-                String credentials = (driver.email + ":" + driver.password);
+                String credentials = (Constant.username + ":" + Constant.password);
                 String base64EncodedCredentials = Base64.encodeToString(credentials.getBytes(), Base64.NO_WRAP);
                 headers.put("Content-Type", "application/json");
                 headers.put("Authorization", "Basic " + base64EncodedCredentials);
@@ -319,7 +320,7 @@ public class HTTPHelper {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 HashMap<String, String> headers = new HashMap<String, String>();
-                String credentials = (driver.email + ":" + driver.password);
+                String credentials = (Constant.username + ":" + Constant.password);
                 String base64EncodedCredentials = Base64.encodeToString(credentials.getBytes(), Base64.NO_WRAP);
                 headers.put("Content-Type", "application/json");
                 headers.put("Authorization", "Basic " + base64EncodedCredentials);
@@ -349,7 +350,7 @@ public class HTTPHelper {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 HashMap<String, String> headers = new HashMap<String, String>();
-                String credentials = (driver.email + ":" + driver.password);
+                String credentials = (Constant.username + ":" + Constant.password);
                 String base64EncodedCredentials = Base64.encodeToString(credentials.getBytes(), Base64.NO_WRAP);
                 headers.put("Content-Type", "application/json");
                 headers.put("Authorization", "Basic " + base64EncodedCredentials);
@@ -379,7 +380,7 @@ public class HTTPHelper {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 HashMap<String, String> headers = new HashMap<String, String>();
-                String credentials = (driver.email + ":" + driver.password);
+                String credentials = (Constant.username + ":" + Constant.password);
                 String base64EncodedCredentials = Base64.encodeToString(credentials.getBytes(), Base64.NO_WRAP);
                 headers.put("Content-Type", "application/json");
                 headers.put("Authorization", "Basic " + base64EncodedCredentials);
@@ -409,7 +410,7 @@ public class HTTPHelper {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 HashMap<String, String> headers = new HashMap<String, String>();
-                String credentials = (driver.email + ":" + driver.password);
+                String credentials = (Constant.username + ":" + Constant.password);
                 String base64EncodedCredentials = Base64.encodeToString(credentials.getBytes(), Base64.NO_WRAP);
                 headers.put("Content-Type", "application/json");
                 headers.put("Authorization", "Basic " + base64EncodedCredentials);
@@ -439,7 +440,7 @@ public class HTTPHelper {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 HashMap<String, String> headers = new HashMap<String, String>();
-                String credentials = (driver.email + ":" + driver.password);
+                String credentials = (Constant.username + ":" + Constant.password);
                 String base64EncodedCredentials = Base64.encodeToString(credentials.getBytes(), Base64.NO_WRAP);
                 headers.put("Content-Type", "application/json");
                 headers.put("Authorization", "Basic " + base64EncodedCredentials);
@@ -469,7 +470,7 @@ public class HTTPHelper {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 HashMap<String, String> headers = new HashMap<String, String>();
-                String credentials = (driver.email + ":" + driver.password);
+                String credentials = (Constant.username + ":" + Constant.password);
                 String base64EncodedCredentials = Base64.encodeToString(credentials.getBytes(), Base64.NO_WRAP);
                 headers.put("Content-Type", "application/json");
                 headers.put("Authorization", "Basic " + base64EncodedCredentials);
@@ -499,7 +500,7 @@ public class HTTPHelper {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 HashMap<String, String> headers = new HashMap<String, String>();
-                String credentials = (driver.email + ":" + driver.password);
+                String credentials = (Constant.username + ":" + Constant.password);
                 String base64EncodedCredentials = Base64.encodeToString(credentials.getBytes(), Base64.NO_WRAP);
                 headers.put("Content-Type", "application/json");
                 headers.put("Authorization", "Basic " + base64EncodedCredentials);
@@ -529,7 +530,7 @@ public class HTTPHelper {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 HashMap<String, String> headers = new HashMap<String, String>();
-                String credentials = (driver.email + ":" + driver.password);
+                String credentials = (Constant.username + ":" + Constant.password);
                 String base64EncodedCredentials = Base64.encodeToString(credentials.getBytes(), Base64.NO_WRAP);
                 headers.put("Content-Type", "application/json");
                 headers.put("Authorization", "Basic " + base64EncodedCredentials);
@@ -559,7 +560,7 @@ public class HTTPHelper {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 HashMap<String, String> headers = new HashMap<String, String>();
-                String credentials = (driver.email + ":" + driver.password);
+                String credentials = (Constant.username + ":" + Constant.password);
                 String base64EncodedCredentials = Base64.encodeToString(credentials.getBytes(), Base64.NO_WRAP);
                 headers.put("Content-Type", "application/json");
                 headers.put("Authorization", "Basic " + base64EncodedCredentials);
@@ -589,7 +590,7 @@ public class HTTPHelper {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 HashMap<String, String> headers = new HashMap<String, String>();
-                String credentials = (driver.email + ":" + driver.password);
+                String credentials = (Constant.username + ":" + Constant.password);
                 String base64EncodedCredentials = Base64.encodeToString(credentials.getBytes(), Base64.NO_WRAP);
                 headers.put("Content-Type", "application/json");
                 headers.put("Authorization", "Basic " + base64EncodedCredentials);
@@ -619,7 +620,7 @@ public class HTTPHelper {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 HashMap<String, String> headers = new HashMap<String, String>();
-                String credentials = (driver.email + ":" + driver.password);
+                String credentials = (Constant.username + ":" + Constant.password);
                 String base64EncodedCredentials = Base64.encodeToString(credentials.getBytes(), Base64.NO_WRAP);
                 headers.put("Content-Type", "application/json");
                 headers.put("Authorization", "Basic " + base64EncodedCredentials);
@@ -649,7 +650,7 @@ public class HTTPHelper {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 HashMap<String, String> headers = new HashMap<String, String>();
-                String credentials = (driver.email + ":" + driver.password);
+                String credentials = (Constant.username + ":" + Constant.password);
                 String base64EncodedCredentials = Base64.encodeToString(credentials.getBytes(), Base64.NO_WRAP);
                 headers.put("Content-Type", "application/json");
                 headers.put("Authorization", "Basic " + base64EncodedCredentials);
@@ -679,7 +680,7 @@ public class HTTPHelper {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 HashMap<String, String> headers = new HashMap<String, String>();
-                String credentials = (driver.email + ":" + driver.password);
+                String credentials = (Constant.username + ":" + Constant.password);
                 String base64EncodedCredentials = Base64.encodeToString(credentials.getBytes(), Base64.NO_WRAP);
                 headers.put("Content-Type", "application/json");
                 headers.put("Authorization", "Basic " + base64EncodedCredentials);
@@ -709,7 +710,7 @@ public class HTTPHelper {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 HashMap<String, String> headers = new HashMap<String, String>();
-                String credentials = (driver.email + ":" + driver.password);
+                String credentials = (Constant.username + ":" + Constant.password);
                 String base64EncodedCredentials = Base64.encodeToString(credentials.getBytes(), Base64.NO_WRAP);
                 headers.put("Content-Type", "application/json");
                 headers.put("Authorization", "Basic " + base64EncodedCredentials);
@@ -739,7 +740,7 @@ public class HTTPHelper {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 HashMap<String, String> headers = new HashMap<String, String>();
-                String credentials = (driver.email + ":" + driver.password);
+                String credentials = (Constant.username + ":" + Constant.password);
                 String base64EncodedCredentials = Base64.encodeToString(credentials.getBytes(), Base64.NO_WRAP);
                 headers.put("Content-Type", "application/json");
                 headers.put("Authorization", "Basic " + base64EncodedCredentials);
@@ -770,7 +771,7 @@ public class HTTPHelper {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 HashMap<String, String> headers = new HashMap<String, String>();
-                String credentials = (driver.email + ":" + driver.password);
+                String credentials = (Constant.username + ":" + Constant.password);
                 String base64EncodedCredentials = Base64.encodeToString(credentials.getBytes(), Base64.NO_WRAP);
                 headers.put("Content-Type", "application/json");
                 headers.put("Authorization", "Basic " + base64EncodedCredentials);
@@ -802,7 +803,7 @@ public class HTTPHelper {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 HashMap<String, String> headers = new HashMap<String, String>();
-                String credentials = (driver.email + ":" + driver.password);
+                String credentials = (Constant.username + ":" + Constant.password);
                 String base64EncodedCredentials = Base64.encodeToString(credentials.getBytes(), Base64.NO_WRAP);
                 headers.put("Content-Type", "application/json");
                 headers.put("Authorization", "Basic " + base64EncodedCredentials);
@@ -832,7 +833,7 @@ public class HTTPHelper {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 HashMap<String, String> headers = new HashMap<String, String>();
-                String credentials = (driver.email + ":" + driver.password);
+                String credentials = (Constant.username + ":" + Constant.password);
                 String base64EncodedCredentials = Base64.encodeToString(credentials.getBytes(), Base64.NO_WRAP);
                 headers.put("Content-Type", "application/json");
                 headers.put("Authorization", "Basic " + base64EncodedCredentials);
@@ -861,7 +862,7 @@ public class HTTPHelper {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 HashMap<String, String> headers = new HashMap<String, String>();
-                String credentials = (driver.email + ":" + driver.password);
+                String credentials = (Constant.username + ":" + Constant.password);
                 String base64EncodedCredentials = Base64.encodeToString(credentials.getBytes(), Base64.NO_WRAP);
                 headers.put("Content-Type", "application/json");
                 headers.put("Authorization", "Basic " + base64EncodedCredentials);
@@ -891,7 +892,7 @@ public class HTTPHelper {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 HashMap<String, String> headers = new HashMap<String, String>();
-                String credentials = (driver.email + ":" + driver.password);
+                String credentials = (Constant.username + ":" + Constant.password);
                 String base64EncodedCredentials = Base64.encodeToString(credentials.getBytes(), Base64.NO_WRAP);
                 headers.put("Content-Type", "application/json");
                 headers.put("Authorization", "Basic " + base64EncodedCredentials);
@@ -920,7 +921,7 @@ public class HTTPHelper {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 HashMap<String, String> headers = new HashMap<String, String>();
-                String credentials = (driver.email + ":" + driver.password);
+                String credentials = (Constant.username + ":" + Constant.password);
                 String base64EncodedCredentials = Base64.encodeToString(credentials.getBytes(), Base64.NO_WRAP);
                 headers.put("Content-Type", "application/json");
                 headers.put("Authorization", "Basic " + base64EncodedCredentials);
@@ -949,7 +950,7 @@ public class HTTPHelper {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 HashMap<String, String> headers = new HashMap<String, String>();
-                String credentials = (driver.email + ":" + driver.password);
+                String credentials = (Constant.username + ":" + Constant.password);
                 String base64EncodedCredentials = Base64.encodeToString(credentials.getBytes(), Base64.NO_WRAP);
                 headers.put("Content-Type", "application/json");
                 headers.put("Authorization", "Basic " + base64EncodedCredentials);
@@ -978,7 +979,8 @@ public class HTTPHelper {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 HashMap<String, String> headers = new HashMap<String, String>();
-                String credentials = (driver.email + ":" + driver.password);
+                String credentials = (Constant.username + ":" + Constant.password);
+
                 String base64EncodedCredentials = Base64.encodeToString(credentials.getBytes(), Base64.NO_WRAP);
                 headers.put("Content-Type", "application/json");
                 headers.put("Authorization", "Basic " + base64EncodedCredentials);
@@ -1007,7 +1009,8 @@ public class HTTPHelper {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 HashMap<String, String> headers = new HashMap<String, String>();
-                String credentials = (driver.email + ":" + driver.password);
+                String credentials = (Constant.username + ":" + Constant.password);
+
                 String base64EncodedCredentials = Base64.encodeToString(credentials.getBytes(), Base64.NO_WRAP);
                 headers.put("Content-Type", "application/json");
                 headers.put("Authorization", "Basic " + base64EncodedCredentials);
@@ -1036,7 +1039,7 @@ public class HTTPHelper {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 HashMap<String, String> headers = new HashMap<String, String>();
-                String credentials = (driver.email + ":" + driver.password);
+                String credentials = (Constant.username + ":" + Constant.password);
                 String base64EncodedCredentials = Base64.encodeToString(credentials.getBytes(), Base64.NO_WRAP);
                 headers.put("Content-Type", "application/json");
                 headers.put("Authorization", "Basic " + base64EncodedCredentials);
@@ -1069,7 +1072,7 @@ public class HTTPHelper {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 HashMap<String, String> headers = new HashMap<String, String>();
-                String credentials = (driver.email + ":" + driver.password);
+                String credentials = (Constant.username + ":" + Constant.password);
                 String base64EncodedCredentials = Base64.encodeToString(credentials.getBytes(), Base64.NO_WRAP);
                 headers.put("Content-Type", "application/json");
                 headers.put("Authorization", "Basic " + base64EncodedCredentials);
@@ -1102,7 +1105,7 @@ public class HTTPHelper {
             @Override
             public Map<String, String> getHeaders() throws AuthFailureError {
                 HashMap<String, String> headers = new HashMap<String, String>();
-                String credentials = (driver.email + ":" + driver.password);
+                String credentials = (Constant.username + ":" + Constant.password);
                 String base64EncodedCredentials = Base64.encodeToString(credentials.getBytes(), Base64.NO_WRAP);
                 headers.put("Content-Type", "application/json");
                 headers.put("Authorization", "Basic " + base64EncodedCredentials);

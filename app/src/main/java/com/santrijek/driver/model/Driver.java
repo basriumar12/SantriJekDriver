@@ -8,8 +8,8 @@ public class Driver {
     public String id;
     public String name;
     public String phone;
-    public String email;
-    public String password;
+    public String email ="admin";
+    public String password="1234";
     public String image;
     public int deposit;
     public String rating;

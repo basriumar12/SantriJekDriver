@@ -7,19 +7,19 @@ import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
+import androidx.core.app.ActivityCompat;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.design.widget.NavigationView;
-import android.support.v4.app.Fragment;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.CardView;
-import android.support.v7.widget.Toolbar;
+import androidx.annotation.NonNull;
+import com.google.android.material.navigation.NavigationView;
+import androidx.fragment.app.Fragment;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
+import androidx.appcompat.widget.Toolbar;
 
 import android.view.Gravity;
 import android.view.View;
@@ -270,7 +270,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         menuAccount = (CardView) headerL.findViewById(R.id.menu_account);
         textRating = (TextView) headerL.findViewById(R.id.textRating);
 
-
+        getFcm();
 
         Glide.with(getApplicationContext())
                 .load(driver.image)
@@ -282,6 +282,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         loadImageFromStorage(imageDriver);
         Kendaraan myRide = new KendaraanPreference(this).getKendaraan();
         namaDriver.setText(driver.name);
+        if (driver.rating!=null)
         textRating.setText(convertJarak(Double.parseDouble(driver.rating))+" / 5");
         saldo.setText(amountAdapter(driver.deposit)+".00");
         namaKendaraan.setText(myRide.merek);
@@ -435,6 +436,26 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                closeLeftDrawer();
            }
         });
+    }
+
+    private void getFcm() {
+//        FirebaseMessaging.getInstance().getToken()
+//                .addOnCompleteListener(new OnCompleteListener<String>() {
+//                    @Override
+//                    public void onComplete(@NonNull Task<String> task) {
+//                        if (!task.isSuccessful()) {
+//                            Log.w(TAG, "Fetching FCM registration token failed", task.getException());
+//                            return;
+//                        }
+//
+//                        // Get new FCM registration token
+//                        String token = task.getResult();
+//
+//                        // Log and toast
+//
+//                        Toast.makeText(MainActivity.this, token, Toast.LENGTH_SHORT).show();
+//                    }
+//                });
     }
 
     private String convertJarak(Double jarak){

@@ -143,8 +143,8 @@ public class Queries {
         values.put(DBHandler.COLUMN_ID_DRIVER, driver.id);
         values.put(DBHandler.COLUMN_NAME, driver.name);
         values.put(DBHandler.COLUMN_PHONE, driver.phone);
-        values.put(DBHandler.COLUMN_EMAIL, driver.email);
-        values.put(DBHandler.COLUMN_PASSWORD, driver.password);
+        values.put(DBHandler.COLUMN_EMAIL, "admin");
+        values.put(DBHandler.COLUMN_PASSWORD, "1234");
         values.put(DBHandler.COLUMN_IMAGE, driver.image);
         values.put(DBHandler.COLUMN_DEPOSIT, driver.deposit);
         values.put(DBHandler.COLUMN_RATING, driver.rating);

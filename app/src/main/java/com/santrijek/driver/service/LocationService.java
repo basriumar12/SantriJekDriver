@@ -8,7 +8,7 @@ import android.location.Location;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.IBinder;
-import android.support.v4.app.ActivityCompat;
+import androidx.core.app.ActivityCompat;
 
 import com.santrijek.driver.database.DBHandler;
 import com.santrijek.driver.database.Queries;
