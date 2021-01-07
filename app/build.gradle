@@ -15,7 +15,10 @@ android {
         renderscriptTargetApi 29
         renderscriptSupportModeEnabled true
     }
-
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
     buildTypes {
         release {
             minifyEnabled false
